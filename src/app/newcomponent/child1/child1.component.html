@@ -1,0 +1,54 @@
+<div class="container" *ngIf = "modifydetails == false">
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Phone no.
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        City
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Address
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600"
+                    *ngFor="let datas of data.data | searchFilter : [searchval, radval]">
+                    <th scope="row"
+                        class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <div class="ps-3">
+                            <div class="text-base font-semibold">{{datas.Name}}</div>
+                        </div>
+                    </th>
+                    <td class="px-6 py-4">
+                        {{datas.Phone_no}}
+                    </td>
+                    <td class="px-6 py-4">
+                        {{datas.City}}
+                    </td>
+                    <td class="px-6 py-4">
+                        {{datas.address}}
+                    </td>
+                    <td class="px-6 py-4">
+                        <!-- <a [routerLink] = "['/edituser']" (click)="onSelect()" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a> -->
+                        <a (click) = "sendId(datas.Id)" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div *ngIf = "modifydetails == true">
+    <app-modifydetails [userid] = "userid" [showtog] = true></app-modifydetails>
+</div>

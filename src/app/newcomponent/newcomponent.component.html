@@ -1,0 +1,43 @@
+<ul
+  class="mx-5 mt-10 items-center text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+  <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+    <div class="flex items-center ps-3">
+      <input [(ngModel)]="radval" id="horizontal-list-radio-license" type="radio" value="1" name="list-radio"
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+      <label for="horizontal-list-radio-license"
+        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Name </label>
+    </div>
+  </li>
+  <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+    <div class="flex items-center ps-3">
+      <input [(ngModel)]="radval" id="horizontal-list-radio-id" type="radio" value="2" name="list-radio"
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+      <label for="horizontal-list-radio-id"
+        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Phone no. </label>
+    </div>
+  </li>
+  <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+    <div class="flex items-center ps-3">
+      <input [(ngModel)]="radval" id="horizontal-list-radio-military" type="radio" value="3" name="list-radio"
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+      <label for="horizontal-list-radio-military"
+        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">City</label>
+    </div>
+  </li>
+</ul>
+
+<div class="searching mx-5 my-5">
+  <div class="relative my-5">
+    <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+      <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="
+        http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+      </svg>
+    </div>
+    <input type="text" id="table-search-users" [(ngModel)]="searchval"
+      class="block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="Search for users">
+  </div>
+  <app-child1 [searchval]="searchval" [radval]="radval"></app-child1>
+</div>

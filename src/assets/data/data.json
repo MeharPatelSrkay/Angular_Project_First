@@ -1,0 +1,142 @@
+{"data":
+    [
+        {
+            "Id" : "1",
+            "Name" : "Mehar",
+            "Phone_no" : "5432657687",
+            "City" : "Surat"
+        },
+        {
+            "Id" : "2",
+            "Name" : "Dhruv",
+            "Phone_no" : "6778986543",
+            "City" : "California"
+        },
+        {
+            "Id" : "3",
+            "Name" : "Joker",
+            "Phone_no" : "8765432198",
+            "City" : "Gotham"
+        },
+        {
+            "Id" : "4",
+            "Name" : "Stark",
+            "Phone_no" : "9865432165",
+            "City" : "New York"
+        },
+        {
+            "Id" : "5",
+            "Name" : "Natasha",
+            "Phone_no" : "6543219865",
+            "City" : "Moscow"
+        },
+        {
+            "Id" : "6",
+            "Name" : "Natasha",
+            "Phone_no" : "3467807653",
+            "City" : "New York"
+        },
+        {
+            "Id" : "7",
+            "Name" : "Thor",
+            "Phone_no" : "4567899023",
+            "City" : "Assgard"
+        },
+        {
+            "Id" : "8",
+            "Name" : "Ultron",
+            "Phone_no" : "7654329865",
+            "City" : "Sokovia"
+        },
+        {
+            "Id" : "9",
+            "Name" : "Mehar",
+            "Phone_no" : "7654432198",
+            "City" : "California"
+        },
+        {
+            "Id" : "10",
+            "Name" : "Hulk",
+            "Phone_no" : "7354198742",
+            "City" : "Argentina"
+        },
+        {
+            "Id" : "11",
+            "Name" : "Steve",
+            "Phone_no" : "8324614322",
+            "City" : "Texas"
+        },
+        {
+            "Id" : "12",
+            "Name" : "Clint",
+            "Phone_no" : "9842725387",
+            "City" : "Samara"
+        },
+        {
+            "Id" : "13",
+            "Name" : "David",
+            "Phone_no" : "7265397823",
+            "City" : "Moscow"
+        },
+        {
+            "Id" : "14",
+            "Name" : "Joker",
+            "Phone_no" : "9844361324",
+            "City" : "Texas"
+        },
+        {
+            "Id" : "15",
+            "Name" : "Steve",
+            "Phone_no" : "6543285391",
+            "City" : "Seattle"
+        },
+        {
+            "Id" : "16",
+            "Name" : "Barten",
+            "Phone_no" : "5432986152",
+            "City" : "Boston"
+        },
+        {
+            "Id" : "17",
+            "Name" : "Tony",
+            "Phone_no" : "5273086543",
+            "City" : "Austin"
+        },
+        {
+            "Id" : "18",
+            "Name" : "Wanda",
+            "Phone_no" : "6243518769",
+            "City" : "Sokovia"
+        },
+        {
+            "Id" : "19",
+            "Name" : "Pietro",
+            "Phone_no" : "9563478926",
+            "City" : "Sokovia"
+        },
+        {
+            "Id" : "20",
+            "Name" : "Thanos",
+            "Phone_no" : "6655443322",
+            "City" : "Titan"
+        },
+        {
+            "Id" : "21",
+            "Name" : "Peter",
+            "Phone_no" : "8564342654",
+            "City" : "Missouri"
+        },
+        {
+            "Id" : "22",
+            "Name" : "Bruce",
+            "Phone_no" : "7654321980",
+            "City" : "Gotham"
+        },
+        {
+            "Id" : "23",
+            "Name" : "Banner",
+            "Phone_no" : "8765432190",
+            "City" : "California"
+        }
+    ]
+}
