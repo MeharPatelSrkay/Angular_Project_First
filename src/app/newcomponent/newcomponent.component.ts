@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SearchFilterPipe } from '../search-filter.pipe';
-// import * as data from '../../assets/data/data.json';
 import { Child1Component } from './child1/child1.component';
 // import { NgFor } from '@angular/common';
 
@@ -15,7 +14,6 @@ import { Child1Component } from './child1/child1.component';
 })
 export class NewcomponentComponent {
   constructor(){}
-  // data = data
   // gfg: string = ''; 
   
   // setValue() { 
@@ -25,4 +23,5 @@ export class NewcomponentComponent {
 
   searchval : string = "";
   radval : string = "";
+  mehar : string = "hello"
 }

@@ -1,7 +1,6 @@
 import { mergeApplicationConfig, ApplicationConfig } from '@angular/core';
 import { provideServerRendering } from '@angular/platform-server';
 import { appConfig } from './app.config';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 const serverConfig: ApplicationConfig = {
   providers: [

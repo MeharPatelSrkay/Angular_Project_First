@@ -3,8 +3,8 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SearchFilterPipe } from '../../search-filter.pipe';
 import * as data from '../../../assets/data/data.json'
-// import { RouterModule, Router } from "@angular/router"; 
 import { ModifydetailsComponent } from '../modifydetails/modifydetails.component';
+// import { RouterModule, Router } from "@angular/router"; 
 
 @Component({
   selector: 'app-child1',
@@ -17,7 +17,6 @@ import { ModifydetailsComponent } from '../modifydetails/modifydetails.component
 export class Child1Component {
   // constructor(
   //   private router: Router) { }
-
   data = data;
   @Input() searchval : any;
   @Input() radval : any;
@@ -25,6 +24,8 @@ export class Child1Component {
   checkbtn = false
   userid = ""
   modifydetails = false
+  Mehar = "Hello I m Mehar Patel"
+  // countries = country_data.getCountries()
 
   // @Output() showtable : boolean = true;
 
@@ -36,4 +37,12 @@ export class Child1Component {
     this.userid = id
     this.modifydetails = true
   }
+
+  onmodified(showtablebool : boolean){
+    this.modifydetails = showtablebool
+  }
+
+  // GetChildData(data : boolean){
+  //   this.modifydetails = data;
+  // }
 }

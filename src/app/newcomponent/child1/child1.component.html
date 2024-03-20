@@ -1,4 +1,4 @@
-<div class="container" *ngIf = "modifydetails == false">
+<div class="container" *ngIf="modifydetails == false">
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
 
         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -41,7 +41,9 @@
                     </td>
                     <td class="px-6 py-4">
                         <!-- <a [routerLink] = "['/edituser']" (click)="onSelect()" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a> -->
-                        <a (click) = "sendId(datas.Id)" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+                        <a (click)="sendId(datas.Id)"
+                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline cursor-pointer">Edit
+                            user</a>
                     </td>
                 </tr>
             </tbody>
@@ -49,6 +51,6 @@
     </div>
 </div>
 
-<div *ngIf = "modifydetails == true">
-    <app-modifydetails [userid] = "userid" [showtog] = true></app-modifydetails>
+<div *ngIf="modifydetails == true">
+    <app-modifydetails (UpdatedData)="onmodified($event)" [userid]="userid" [showtog]=true></app-modifydetails>
 </div>
