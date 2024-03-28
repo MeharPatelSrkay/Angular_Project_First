@@ -22,6 +22,8 @@ export class AppComponent {
     });    
     console.log(JSON.stringify(this.data));
   }
+
+
   // constructor(){
   //   setTimeout(() => {
   //     this.title = "Change Title";

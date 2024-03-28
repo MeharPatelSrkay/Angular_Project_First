@@ -3,7 +3,6 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SearchFilterPipe } from '../search-filter.pipe';
 import { Child1Component } from './child1/child1.component';
-// import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-newcomponent',
@@ -24,4 +23,5 @@ export class NewcomponentComponent {
   searchval : string = "";
   radval : string = "";
   mehar : string = "hello"
+
 }

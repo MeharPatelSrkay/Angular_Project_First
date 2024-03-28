@@ -9,6 +9,18 @@ export class FirstserviceService {
   data = data
   constructor() { }
   getdata(){
-    return data.data[]
+    return data.data
   }
+
+  updatefunc(id: any, address : any, city : any){
+    this.getdata().forEach(datas => {
+      if(datas.Id == id){
+        Object.assign(datas, {"address" : address})
+        if (datas.City != city) {
+          datas.City = city
+        }
+      }
+    });
+  }
+
 }

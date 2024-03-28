@@ -1,0 +1,20 @@
+{
+  "add_data" :  [
+    { 
+      "State":"Gujrat",
+      "city":["Surat","Ahmedabad","Vadodara","Rajkot"]
+    },
+    { 
+      "State":"Delhi",
+      "city":["Faridabad","New-delhi"]
+    },
+    { 
+      "State":"Province of Punjab",
+      "city":["Lahore","Faisalabad","Rawalpindi","Multan"]
+    },
+    { 
+      "State":"New-york",
+      "city":["Brooklyn","NewYork","Queens","The Bronx"]
+    } 
+]
+}
